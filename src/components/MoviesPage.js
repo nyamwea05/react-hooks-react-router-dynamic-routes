@@ -5,8 +5,12 @@ import MoviesList from "./MoviesList";
 function MoviesPage({ movies }) {
   return (
     <div>
-      <MoviesList movies={movies} />
+      <h1>Movies Page</h1>
+      <Route exact path="/movies">
+        <MoviesList movies={movies} />
+      </Route>
     </div>
   );
 }
+
 export default MoviesPage;
